@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order custom smoothies online from Dreamer Cafe">
+    <title>Dreamer Cafe - Custom Smoothies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="refreshPage" class="calligraphy">Dreamer Cafe</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="order-section">
+            <h2>Create Your Custom Smoothie</h2>
+            <form id="smoothieForm">
+                <div class="form-group">
+                    <label for="customerName">Name:</label>
+                    <input type="text" id="customerName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="base">Base ($5):</label>
+                    <select id="base" required>
+                        <option value="Milk">Milk</option>
+                        <option value="Almond Milk">Almond Milk</option>
+                        <option value="Water">Water</option>
+                        <option value="Yogurt">Yogurt</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Fruits ($2 each):</legend>
+                    <div>
+                        <input type="checkbox" id="strawberry" value="Strawberry">
+                        <label for="strawberry">Strawberry</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="banana" value="Banana">
+                        <label for="banana">Banana</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mango" value="Mango">
+                        <label for="mango">Mango</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Sweetness Level:</legend>
+                    <div>
+                        <input type="radio" id="noSugar" name="sweetness" value="No Sugar" required>
+                        <label for="noSugar">No Sugar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="lowSugar" name="sweetness" value="Low Sugar">
+                        <label for="lowSugar">Low Sugar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="normalSugar" name="sweetness" value="Normal Sugar">
+                        <label for="normalSugar">Normal Sugar</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="topping">Toppings ($1 each):</label>
+                    <select id="topping">
+                        <option value="None">None</option>
+                        <option value="Chia Seeds">Chia Seeds</option>
+                        <option value="Granola">Granola</option>
+                        <option value="Whipped Cream">Whipped Cream</option>
+                    </select>
+                </div>
+
+                <button type="button" id="orderBtn">Order Now</button>
+            </form>
+        </section>
+
+        <section id="orderSummary" class="summary-section"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dreamer Cafe | Designed for Smoothie Lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

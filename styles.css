@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: url('pexels-element5-775032.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background: url('TimelineCovers.pro_strawberry-milkshakes-facebook-cover.jpg') no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.calligraphy {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #f4511e;
+}
+
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group, fieldset {
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f4511e;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d03e1c;
+}
+
+.summary-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
